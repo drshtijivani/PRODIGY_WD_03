@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+}
+
+nav {
+    background-color: #590459;
+    color: white;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    justify-content: center; /* Align horizontally */
+    align-items: center;
+    align-items: center;
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+}
+nav ul li {
+    font-size: 24px;
+    
+}
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    border: 4px solid #590459;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+/* Existing styles for nav, .gameContainer, .container, and .reset-btn */
+
+
+
+
+.box {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Set the height to match the width */
+    border: 0.5px solid #590459;
+    background-color: #e7daeb; /* Set background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 36px; /* Adjust font size */
+    font-weight: bold;
+    color: #590459; /* Set text color */
+    box-shadow: 2px 2px 6px rgba(121, 33, 156, 0.3); /* Apply box shadow for 3D effect */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); /* Adjust hover box shadow */
+    transform: translateY(-2px); 
+}
+
+.info {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.gameInfo {
+    padding: 20px;
+    text-align: center;
+}
+
+.gameInfo h1 {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 2.5rem;
+    color: #590459;
+    margin-bottom: 20px;
+}
+
+.imgbox img {
+    max-width: 100%;
+    height: auto;
+    transition: width 1s ease-in-out;
+}
+.bt-0 {
+    border-top: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+#reset {
+    margin-top: 20px; /* Add margin-top to position below Tic Tac Toe boxes */
+    padding: 10px 20px;
+    background-color: #590459; /* Adjust background color */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#reset:hover {
+    background-color: #911d91;
+}
+
+
+
+@media screen and (max-width: 950px) {
+    .gameContainer {
+        flex-wrap: wrap;
+    }
+
+    .gameInfo h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        font-size: 5vw;
+    }
+}
